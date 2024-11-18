@@ -1,0 +1,272 @@
+/* Enhanced Fonts and Layouts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+
+/* General Styles */
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+header img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #edc308;
+}
+.pr_One{
+
+    font-size: 1.5rem;
+    color: #e41212;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+}
+
+
+
+.hero img {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    border: 8px solid gold;
+    box-shadow: 0px 20px 40px rgba(255, 215, 0, 0.7);
+    animation: pulse 2s infinite alternate;
+}
+
+/* Premium Explore More Button */
+.hero button, .game button {
+    background: linear-gradient(145deg, #ffd700, #ff8c00);
+    color: #0b0b0b;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5), 0px 3px 10px rgba(0, 0, 0, 0.3) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero button::before, .game button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4), transparent);
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.hero button:hover::before, .game button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hero button:hover, .game button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(255, 165, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.3) inset;
+    background: linear-gradient(145deg, #ffcc33, #ffaa00);
+}
+
+.hero button:active, .game button:active {
+    transform: translateY(0);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Game Showcase */
+.game-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px; /* Reduced gap between games */
+    padding: 40px 0;
+}
+
+.game {
+    text-align: center;
+    background: linear-gradient(145deg, #333, #444);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 320px;
+    flex: 1;
+    margin: 5px; /* Reduced margin between games */
+    overflow: hidden;
+    position: relative;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.game:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Pricing Section */
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.price .robux-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.price .discount {
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: #ff4747;
+}
+
+.price .current {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Copies Left - Golden Glowing Text */
+.games_two {
+    font-size: 1.2rem;
+    color: #116306;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+}
+.games_T{
+
+    font-size: 1.2rem;
+    color: #e41212;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+}
+
+/* Sold-Out Section */
+.sold-out {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sold-out-game {
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+    position: relative; /* Ensure 'SOLD OUT' text is positioned over the image */
+}
+
+/* Make sure the image is visible */
+.sold-out-game img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+/* Sold Out Styling */
+.sold-out-game::before {
+    content: "SOLD OUT";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e9e6ef; /* White text color */
+    font-weight: bold;
+    font-size: 24px;
+    background-color: rgba(221, 15, 15, 0.8); /* Red background with slight transparency */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #f4efef; /* Glowing red text effect */
+}
+
+.sold-out-game {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+/* Fireworks Animation */
+.firework-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('fireworks.gif') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero img {
+        width: 80%; /* Slightly smaller on mobile */
+    }
+
+    .game-showcase,
+    .sold-out {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game,
+    .sold-out-game {
+        width: 90%;
+    }
+
+    .hero button,
+    .game button {
+        padding: 12px 25px; /* Adjust button size for mobile */
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+
+    .games_two {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Creator - Roblox Game Sales</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Enhanced Loading Screen Styles */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, #000000, #FFD700, #000000);
+            background-size: 300% 300%;
+            animation: colorShift 6s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 9999;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease-in-out;
+        }
+
+        .loading-screen.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .loading-screen img {
+            width: 180px;
+            height: 180px;
+            animation: rotate 2.5s linear infinite, glow 1.5s alternate infinite;
+        }
+
+        .loading-screen p {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+            animation: fadeIn 1.5s infinite alternate;
+        }
+
+        /* Rotating Animation */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Glowing Effect Animation */
+        @keyframes glow {
+            0% {
+                filter: drop-shadow(0 0 10px #ffd700);
+            }
+            100% {
+                filter: drop-shadow(0 0 30px #ffd700);
+            }
+        }
+
+        /* Fade-In Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Color Shifting Background Animation */
+        @keyframes colorShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <img src="./images/image-removebg-preview.png" alt="Loading Logo">
+        <p>Loading Your Premium Experience...</p>
+    </div>
+
+    <header>
+        <a href="https://www.roblox.com/groups/34117506/Infinity-Creator#!/about" target="_blank" class="logo-link">
+            <img src="./images/Infinity_Creator-removebg-preview.PNG" target="_blank" alt="Logo">
+        </a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Exclusive Infinity Creator Original Games</h1>
+            <img src="./images/Ultimate Donations.png" alt="Game 1">
+            <p class="price">
+                <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                <span class="discount">112,999</span> 
+                <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                <span class="current">97,449</span>
+            </p>
+            <p><b>Infinity Creator will support you even after the sale! For one full week,<br> we’ll track your game, add any details big or small, and design custom UI tailored just for you. <br>Make your mark with Ultimate Donation—the ultimate upgrade for your game!</b></p>
+            <p class="pr_One">Created For one owner</p>
+            <a href="./game3.html" target="_blank" class="explore-btn">
+                <button>Explore More</button>
+            </a>
+        </section>
+
+        <!-- Game Showcase Section -->
+        <section class="game-showcase">
+            <!-- Game 2 -->
+            <div class="game">
+                <img src="./images/Coins rush Obby.png" alt="Game 2">
+                <p class="games_two">4/5 Copies Left</p>
+                <p class="price">
+                    <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                    <span class="discount">5,999</span> 
+                    <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                    <span class="current">3,499</span>
+                </p>
+                <a href="./game2.html" target="_blank" class="explore-btn">
+                    <button>Explore More</button>
+                </a>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game">
+                <img src="./images/cops Run Obby.png" alt="Game 3">
+                <p class="games_two">3/5 Copies Left</p>
+                <p class="price">
+                    <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                    <span class="discount">9400</span> 
+                    <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                    <span class="current">6700</span>
+                </p>
+                <a href="./game1.html" target="_blank" class="explore-btn">
+                    <button>Explore More</button>
+                </a>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game">
+                <img src="./images/Clicking-sim2.png" alt="Game 4">
+                <p class="games_T">2/5 Copies Left</p>
+                <p class="price">
+                    <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                    <span class="discount">6,499</span> 
+                    <img src="./images/robux-icon.png" alt="Robux" class="robux-icon"> 
+                    <span class="current">4,560</span>
+                </p>
+                <a href="./game4.html" target="_blank" class="explore-btn">
+                    <button>Explore More</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sold Out Section -->
+        <section class="sold-out">
+            <!-- Sold Out Game 1 -->
+            <div class="game sold-out-game">
+                <img src="./images/Impossible speed obby orignal.png" alt="Sold Out Game 1">
+                <P>SOLD OUT!</P>
+            </div>
+
+            <!-- Sold Out Game 2 -->
+            <div class="game sold-out-game">
+                <img src="./images/Scary Fairyland.png" alt="Sold Out Game 2">
+                <p>SOLD OUT!</p>
+            </div>
+
+            <!-- Sold Out Game 3 -->
+            <div class="game sold-out-game">
+                <img src="./images/Truthordare.png" alt="Sold Out Game 3">
+                <P>SOLD OUT!</P>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loadingScreen = document.getElementById("loading-screen");
+
+            // Attach event listeners to all "Explore More" buttons
+            document.querySelectorAll('.explore-btn').forEach((button) => {
+                button.addEventListener("click", (event) => {
+                    event.preventDefault(); // Prevent immediate navigation
+
+                    // Show the loading screen
+                    loadingScreen.classList.add("active");
+
+                    // Simulate loading delay (or wait for actual resource load)
+                    setTimeout(() => {
+                        // Navigate to the target link
+                        window.location.href = button.href;
+                    }, 3000); // Adjust the delay as needed
+                });
+            });
+        });
+    </script>
+</body>
+</html>
